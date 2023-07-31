@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Navbar from './navbar'
+import "./global.css"
 
 export const metadata: Metadata = {
   title: "Guidje's Portfolio",
