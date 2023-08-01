@@ -5,14 +5,14 @@ import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const form: React.RefObject<HTMLFormElement> = useRef<HTMLFormElement>(null);
-  const serviceId: any = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-  const templateId: any = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-  const publicKey: any = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+  const serviceId: String | undefined = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const templateId: String | undefined = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  const publicKey: String | undefined = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
   const sendEmail = (e: any) => {
     e.preventDefault();
 
-    emailjs.sendForm(serviceId, templateId, form.current!, publicKey)
+    emailjs.sendForm(serviceId as string, templateId as string, form.current!, publicKey as string)
       .then((result) => {
           console.log(result.text);
           e.target.reset();
