@@ -1,0 +1,44 @@
+.navbar_container {
+    background-image: linear-gradient(to right, black , white);    
+    display: flex;
+    width: 30%;
+    height: 100vh;
+}
+
+.navbar_container,
+.navbar {
+    justify-content: right;
+    text-align: right;    
+    align-self: center;
+}
+
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:hover::before {
+    content:'» ';    
+    position: relative;
+    text-decoration: none;
+}
+
+.active_section {
+    font-style: italic;
+}
+
+.active_section::before {
+    content:'» ';    
+    position: relative;
+    text-decoration: none;
+}
