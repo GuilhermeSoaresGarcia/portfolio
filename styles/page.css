@@ -1,9 +1,26 @@
 main {
     display: flex;
-    height: 100vh;
 }
 
-section {
-    background-image: linear-gradient(to right, white, black);
+/* FONTE: https://stackoverflow.com/a/44327660/18172843 */
+.nav_container:before, section:before {
+    background-image: linear-gradient(to right, white, cyan, black);
+    background-repeat: no-repeat;
+    content: "";
+    position: fixed;
+    height: 100%;
     width: 100%;
+  }
+
+section {
+    display: flex;
+    width: 100%;
+}
+
+section div {
+    align-self: center;
+    margin: 0 auto;
+    height: 100vh;    
+    width: 50%;
+    z-index: 1;
 }

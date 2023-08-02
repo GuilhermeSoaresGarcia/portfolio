@@ -1,17 +1,26 @@
 .navbar_container {
-    background-image: linear-gradient(to right, black , white);    
+    align-items: center;
     display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    text-align: right;
+    width: 30%;    
+    flex-shrink: 1;
+}
+
+.navbar_container:before {
+    background-image: linear-gradient(to right, black, white);
+    background-repeat: no-repeat;
+    content: "";
+    position: fixed;
+    height: 100%;
     width: 30%;
-    height: 100vh;
 }
 
-.navbar_container,
 .navbar {
-    justify-content: right;
-    text-align: right;    
-    align-self: center;
+    position: fixed;    
+    z-index: 1;
 }
-
 
 a:link {
     color: black;
@@ -28,7 +37,7 @@ a:hover {
 }
 
 a:hover::before {
-    content:'» ';    
+    content: '» ';
     position: relative;
     text-decoration: none;
 }
@@ -38,7 +47,7 @@ a:hover::before {
 }
 
 .active_section::before {
-    content:'» ';    
+    content: '» ';
     position: relative;
     text-decoration: none;
 }
