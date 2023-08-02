@@ -3,6 +3,7 @@ const nextConfig = {}
 
 module.exports = nextConfig
 
+// FONTE: https://stackoverflow.com/a/65746862/18172843
 module.exports = {
     env: {
         NEXT_PUBLIC_EMAILJS_SERVICE_ID: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
