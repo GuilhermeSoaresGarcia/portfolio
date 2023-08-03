@@ -57,8 +57,12 @@ a:hover::before {
     width: 25px;
 }
 
-.social_media a:hover {
-    text-decoration: none;
+.social_media img:hover{
+    height: 30px;
+    padding: 0;
+    transform: rotate(360deg);
+    transition: all .3s;
+    width: 30px;
 }
 
 .social_media a:hover::before {
