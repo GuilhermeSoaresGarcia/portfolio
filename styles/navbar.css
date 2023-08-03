@@ -4,8 +4,7 @@
     justify-content: flex-end;
     overflow: hidden;
     text-align: right;
-    width: 30%;    
-    flex-shrink: 1;
+    width: 30%;
 }
 
 .navbar_container:before {
@@ -49,5 +48,20 @@ a:hover::before {
 .active_section::before {
     content: '» ';
     position: relative;
+    text-decoration: none;
+}
+
+.social_media img {
+    height: 25px;
+    padding: 2px 3px;
+    width: 25px;
+}
+
+.social_media a:hover {
+    text-decoration: none;
+}
+
+.social_media a:hover::before {
+    content: '';
     text-decoration: none;
 }
