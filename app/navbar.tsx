@@ -4,7 +4,8 @@ import Link from "next/link"
 import "../styles/navbar.css"
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
-import placeholderImg from "../public/placeholder.png"
+import GitHubSVG from "../public/img/github.svg"
+import LinkedinSVG from "../public/img/linkedin.svg"
 
 export default function Navbar() {
 
@@ -22,13 +23,13 @@ export default function Navbar() {
                     <div className="social_media">
                         <Link href={"https://github.com/GuilhermeSoaresGarcia"} target="_blank">
                             <Image
-                                src={placeholderImg}
+                                src={GitHubSVG}
                                 alt="GitHub"
                             />
                         </Link>
                         <Link href={"https://www.linkedin.com/in/guilhermesoaresgarcia/"} target="_blank">
                             <Image
-                                src={placeholderImg}
+                                src={LinkedinSVG}
                                 alt="Linkedin"
                             />
                         </Link>
