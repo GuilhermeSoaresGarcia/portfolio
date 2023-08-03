@@ -1,7 +1,13 @@
 import type { Metadata } from "next"
 import Navbar from "./navbar"
+import { Advent_Pro } from "next/font/google" //FONTE: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 import "../styles/global.css"
 import "../styles/page.css"
+
+const AdventPro = Advent_Pro({
+  subsets: ["latin"],
+  display: "swap",
+})
 
 export const metadata: Metadata = {
   title: "Guidje's Portfolio",
@@ -14,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-br" className={AdventPro.className}>
       <body>
         <main>
           <Navbar />
