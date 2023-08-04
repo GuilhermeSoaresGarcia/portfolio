@@ -1,23 +1,36 @@
-import skillsDataFromFile from "../../public/json/skills.json"
-
-async function getData() {
-  try {
-    const data = skillsDataFromFile
-    return data;
-  } catch (e: any) {
-    console.error(e.message);
-  }
-}
+import SkillCard from "./SkillCard";
+import { ISkill } from "./interfaces/ISkill";
+import skillsDataFromFile from "../../public/json/skills.json";
 
 export default async function Skills() {
-  const { skills }: any = await getData();
-  console.log(skills);
-  return (
 
+  async function fetchData() {
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulating a delay of 1 second.
+      const data: ISkill[] = skillsDataFromFile.skills;
+      return data;
+    } catch (e: any) {
+      console.error(e.message);
+      return [];
+    }
+  }
+
+  const skills = await fetchData();
+
+  return (
     <>
-      {skills.map((skill: any) => (
-        <h1 key={skill.id}>{skill.title}</h1>
-      ))}
+      {
+        skills.map((skill: ISkill) => (
+          <div key={skill.id}>
+            <SkillCard
+              title={skill.title}
+              subtitle={skill.subtitle}
+              img={skill.img}
+              description={skill.description}
+            />
+          </div>
+        ))
+      }
     </>
-  )
+  );
 }
