@@ -1,0 +1,46 @@
+{
+    "skills": [
+        {
+            "id": 1,
+            "title": "JavaScript",
+            "subtitle": "Linguagem de programação interpretada e estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
+            "description": "Something in the way she moves / Attracts me like no other lover / Something in the way she woos me / I don't want to leave her now / You know I believe and how"
+        },
+        {
+            "id": 2,
+            "title": "Python",
+            "subtitle": "Linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte",
+            "img": "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg",
+            "description": "Some things in life are bad / They can really make you mad / Other things just make you swear and curse / When you're chewing on life's gristle / Don't grumble, give a whistle / And this'll help things turn out for the best / And... Always look on the bright side of life"
+        },
+        {
+            "id": 3,
+            "title": "R",
+            "subtitle": "Linguagem de programação multi-paradigma orientada a objetos, programação funcional, dinâmica, fracamente tipada, voltada à manipulação, análise e visualização de dados",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg",
+            "description": "Some things in life are bad / They can really make you mad / Other things just make you swear and curse / When you're chewing on life's gristle / Don't grumble, give a whistle / And this'll help things turn out for the best / And... Always look on the bright side of life"
+        },
+        {
+            "id": 4,
+            "title": "HTML",
+            "subtitle": "Linguagem de Marcação de HiperTexto",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab minima inventore reprehenderit dignissimos. Quia repellendus a voluptatem, harum, maxime laborum aut saepe eveniet magnam reiciendis ipsam accusantium architecto. Porro, nam!"
+        },
+        {
+            "id": 5,
+            "title": "CSS",
+            "subtitle": "Cascading Style Sheets ou Folhas de Estilo em Cascata",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab minima inventore reprehenderit dignissimos. Quia repellendus a voluptatem, harum, maxime laborum aut saepe eveniet magnam reiciendis ipsam accusantium architecto. Porro, nam!"
+        },
+        {
+            "id": 6,
+            "title": "SQL",
+            "subtitle": "Linguagem de domínio específico desenvolvida para gerenciar dados relacionais em um sistema de gerenciamento de banco de dados, ou para processamento de fluxo de dados em um sistema de gerenciamento de fluxo de dados",
+            "img": "https://www.svgrepo.com/show/331760/sql-database-generic.svg",
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab minima inventore reprehenderit dignissimos. Quia repellendus a voluptatem, harum, maxime laborum aut saepe eveniet magnam reiciendis ipsam accusantium architecto. Porro, nam!"
+        }
+    ]
+}
