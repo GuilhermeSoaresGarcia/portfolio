@@ -8,36 +8,12 @@
     justify-self: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
-    padding: 10px;    
+    padding: 10px;
 }
 
 .card-titles {
     flex: 50%;
     text-align: right;
-}
-
-.skill-card h1 {
-    font-weight: 600;
-    font-size: large;
-    padding-bottom: 2px;
-}
-
-.skill-card h2 {
-    font-style: italic;
-}
-
-.skill-card hr {
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    border-top: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
-    width: 60%;
-}
-
-.skill-card p {
-    text-align: justify;
-    text-justify: inter-word;
 }
 
 .card-img {
@@ -47,12 +23,12 @@
 
 .skill-card:nth-child(even) {
     box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3);
-    border-radius: 0 0 10px 0;    
+    border-radius: 0 0 10px 0;
 }
 
 .skill-card:nth-child(odd) {
     box-shadow: -15px 15px 20px rgba(0, 0, 0, 0.3);
-    border-radius: 0 0 0 10px; 
+    border-radius: 0 0 0 10px;
 }
 
 .skill-card:nth-child(odd) .card-img {

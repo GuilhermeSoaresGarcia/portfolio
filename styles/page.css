@@ -1,5 +1,5 @@
 main {
-    display: flex;    
+    display: flex;
 }
 
 /* FONTE: https://stackoverflow.com/a/44327660/18172843 */
@@ -10,7 +10,7 @@ section:before {
     position: fixed;
     height: 100%;
     width: 100%;
-    z-index: -1;    
+    z-index: -1;
 }
 
 section {
@@ -19,9 +19,40 @@ section {
     width: 70%;
 }
 
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: large;
+    padding-bottom: 2px;
+}
+
+h2 {
+    font-style: italic;
+}
+
+hr {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
+    width: 60%;
+}
+
 .main-container {
     align-self: center;
+    display: grid;
     margin: 0 auto;
     height: 100vh;
     width: 50%;
+}
+
+.about-container,
+.skill-container {
+    align-self: center;
+    padding-top: 10%;
 }
