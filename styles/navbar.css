@@ -13,29 +13,31 @@
     content: "";
     position: fixed;
     height: 100%;
-    width: 30%;    
+    width: 30%;
 }
 
 .navbar {
     position: fixed;
+    width: 100%;
     z-index: 1;
 }
 
-a:link {
+.navbar a:link {
     color: black;
     text-decoration: none;
 }
 
-a:visited {
+.navbar a:visited {
     color: black;
     text-decoration: none;
 }
 
-a:hover {
+.navbar a:hover {
     text-decoration: underline;
+    background-color: transparent;
 }
 
-a:hover::before {
+.navbar a:hover:before {
     content: '» ';
     position: relative;
     text-decoration: none;
@@ -45,24 +47,27 @@ a:hover::before {
     font-style: italic;
 }
 
-.active_section::before {
+.active_section:before {
     content: '» ';
     position: relative;
     text-decoration: none;
 }
 
+.social_media {
+    display: inline-block;
+    padding: 1%;
+    width: 200px;
+}
+
 .social_media img {
     height: 25px;
-    padding: 3px 3px;
     width: 25px;
 }
 
-.social_media img:hover{
-    height: 30px;
+.social_media img:hover {
     padding: 0;
     transform: rotate(360deg);
-    transition: all .3s;
-    width: 30px;
+    transition: all .5s;
 }
 
 .social_media a:hover::before {
