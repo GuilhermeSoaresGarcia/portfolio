@@ -5,42 +5,49 @@
             "title": "JavaScript",
             "subtitle": "Linguagem para interatividade e dinamismo em páginas web",
             "img": "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
-            "description": "Something in the way she moves / Attracts me like no other lover / Something in the way she woos me / I don't want to leave her now / You know I believe and how"
+            "description": "Essa foi a linguagem que me ensinou muitos conceitos sobre programação: de variáveis, passando por arrays (ou listas) e objetos, operadores (de atribuição ou aritméticos, até como cada linguagem pode ter seu 'jeitinho' de fazer as coisas - e porque, apesar de existirem diversas, uma é mais adequada do que outra em deteminada tarefa."
         },
         {
             "id": 2,
             "title": "Python",
             "subtitle": "Versátil linguagem para web, análise e automação",
             "img": "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg",
-            "description": "Some things in life are bad / They can really make you mad / Other things just make you swear and curse / When you're chewing on life's gristle / Don't grumble, give a whistle / And this'll help things turn out for the best / And... Always look on the bright side of life"
+            "description": "Eu já havia brincado com Python antes de cursar a Trybe em 2021/22 - e, já naquela oportunidade, a sintáxe da linguagem me agradou bastante. Sem sombra de dúvida, tenho muito ainda a aprender sobre ela - principalmente no que tange aos seus frameworks e bibliotecas - mas a versatilidade da linguagem, facilidade de leitura e utilidade para pequenas automações do dia a dia faz com que ela seja, talvez, a linguagem pela qual tenho mais apreço."
         },
         {
             "id": 3,
             "title": "R",
             "subtitle": "Linguagem de programação voltada à manipulação, análise e visualização de dados",
-            "img": "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg",
-            "description": "Some things in life are bad / They can really make you mad / Other things just make you swear and curse / When you're chewing on life's gristle / Don't grumble, give a whistle / And this'll help things turn out for the best / And... Always look on the bright side of life"
+            "img": "https://www.logo.wine/a/logo/R_(programming_language)/R_(programming_language)-Logo.wine.svg",
+            "description": "Aprendi um pouco dessa linguagem no certificado de análise de dados da Google, em que é utilizado R para algumas tarefas com volumes maiores dados. Apesar de ocasionalmente ser um tanto poluída, alguns detalhes no modo de fazer as coisas em R me agradaram bastante - não só o uso de bibliotecas poderosas para dataviz, como o ggplot ou o tidyverse, mas também a maneira de desenvolver a lógica de uma função em 'camadas', utilizado o recurso de pipe."
         },
         {
             "id": 4,
             "title": "HTML",
             "subtitle": "Linguagem de marcação de HiperTexto",
             "img": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
-            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab minima inventore reprehenderit dignissimos. Quia repellendus a voluptatem, harum, maxime laborum aut saepe eveniet magnam reiciendis ipsam accusantium architecto. Porro, nam!"
+            "description": "Lá por volta do final dos anos 90, início dos 2000, foi quando ganhei meu primeiro PC - e tive acesso a internet (na época, acesso 'dial-up'...) Em algum momento, acabei fuçando em alguma página com o botão direito do mouse e daí descobri o código por trás daquilo tudo. Obviamente o HTML evoluiu bastante desde a época das páginas estáticas baseadas em 'tables' e 'iframes', mas em virtude de ter sido a primeira coisa que me aproximou da programação tenho um carinho especial pelas 'tagzinhas' (ainda que não seja necessariamente uma linguagem de programação.)"
         },
         {
             "id": 5,
             "title": "CSS",
             "subtitle": "Estiliza páginas, controla layout e design",
             "img": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
-            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab minima inventore reprehenderit dignissimos. Quia repellendus a voluptatem, harum, maxime laborum aut saepe eveniet magnam reiciendis ipsam accusantium architecto. Porro, nam!"
+            "description": "Cresci montando sites em HTML puro, com cores 'chapadas' e links roxos. Acabei conhecendo o poder do CSS quando um amigo meu fez um 'cursinho de Dreamweaver' e os resultados das páginas dele eram bem acima do que o que eu conseguia fazer na época. Foi a partir daí que entendi o quão melhor, eficiente e bonito um site poderia ser usando essa tecnologia."
         },
         {
             "id": 6,
             "title": "SQL",
             "subtitle": "Linguagem para gerenciar e consultar bancos de dados",
             "img": "https://www.svgrepo.com/show/331760/sql-database-generic.svg",
-            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab minima inventore reprehenderit dignissimos. Quia repellendus a voluptatem, harum, maxime laborum aut saepe eveniet magnam reiciendis ipsam accusantium architecto. Porro, nam!"
+            "description": "O primeiro curso mais voltado para programação que fiz foi um de modelagem de dados e SQL, ministrado pelo Senac. Porém, todos os demais cursos, em algum momento, passam pelo SQL. No meu curso superior em gestão de TI, no curso de desenvolvimento web da Trybe, agora recentemente em análise de dados pela Google, todos esses cursos usaram e ensinaram essa linguagem em algum momento. E, felizmente, SQL é outra linguagem que me traz bastante satisfação ao trabalhar com ela."
+        },
+        {
+            "id": 7,
+            "title": "TypeScript",
+            "subtitle": "Superset tipado do JavaScript para desenvolvimento robusto",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut molestiae et culpa explicabo aliquam eligendi dignissimos voluptatem minima, dolorum reprehenderit asperiores ut ipsum beatae similique! Quis cumque nihil dicta?"
         }
     ]
 }
