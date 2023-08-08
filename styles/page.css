@@ -77,7 +77,8 @@ hr {
 .about-container,
 .skill-container {
     align-self: center;
-    padding: 10% auto;
+    padding-bottom: 10%;
+    padding-top: 10%;    
 }
 
 .text-italic {
