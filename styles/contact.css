@@ -1,0 +1,50 @@
+.contact-container {
+    display: grid;
+    margin: 0 auto;
+}
+
+.contact-container form {
+    display: grid;
+    gap: 5px;
+    padding-top: 10px;
+    width: 80%;
+}
+
+.contact-container form label {
+    align-self: center;
+    grid-column: 1 / 3;
+    text-align: right;
+}
+
+.contact-container form label:nth-child(5) { /* label do assunto */
+    align-self: self-start;
+}
+
+.contact-container form input {
+    border: 1px solid black;
+    height: 1.5rem;
+    grid-column: 3 / 3;
+}
+
+.contact-container form textarea {
+    grid-column: 3 / 3;
+    height: 5rem;
+    resize: none;
+}
+
+.contact-form-buttons {    
+    display: flex;
+    grid-column: 1 / span 3;
+    margin: 0 auto;
+}
+
+.contact-form-buttons input[type=reset],
+.contact-form-buttons input[type=submit] {
+    border-radius: 10px;
+    height: 2rem;
+    padding: 0 20px;
+}
+
+.contact-form-buttons input[type=reset] {
+    margin-right: 10px;
+}

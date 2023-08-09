@@ -1,21 +1,26 @@
 "use client"
 
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { z } from "zod";
+import "../../styles/contact.css"
 
 export default function Contact() {
   const [showUserFeedback, setShowUserFeedback] = useState<any>([]);
+  const [isError, setIsError] = useState<any>(false);
   const form: React.RefObject<HTMLFormElement> = useRef<HTMLFormElement>(null);
   const serviceId: String | undefined = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
   const templateId: String | undefined = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
   const publicKey: String | undefined = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
+  useEffect(() => { }, [isError]);
+
   const FormSchema = z.object({
     user_name:
       z.string()
-        .nonempty({ message: 'O campo "Nome" é obrigatório' }),
+        .nonempty({ message: 'O campo "Nome" é obrigatório' })
+        .min(3, { message: 'O campo "Nome" deve ter pelo menos 3 caracteres' }),
     user_email:
       z.string()
         .nonempty({ message: 'O campo "E-mail" é obrigatório' })
@@ -40,20 +45,18 @@ export default function Contact() {
     const validationResult = FormSchema.safeParse(formFields)
 
     if (validationResult.success === false) {
-
       const registeredErrors: Array<String> = [];
-
+      setIsError(true);
       validationResult.error.issues.map((issue: any) => {
         registeredErrors.push(issue.message);
         setShowUserFeedback([...registeredErrors]);
-        setTimeout(() => setShowUserFeedback([""]), 5000);
+        setTimeout(() => (setIsError(false), setShowUserFeedback([""])), 10000);
       })
 
     } else {
-      setShowUserFeedback(["Mensagem enviada com sucesso!"]);
+      () => (setIsError(false), setShowUserFeedback(["Mensagem enviada com sucesso!"]));
       setTimeout(() => setShowUserFeedback([""]), 3000);
     }
-
   }
 
 
@@ -69,38 +72,48 @@ export default function Contact() {
   return (
     <div className="contact-container">
       <h1>Contato</h1>
+      <h2>Vamos conversar?</h2>
+      <hr />
 
-      <p>Para entrar em contato comigo, tu podes preencher o formulário abaixo ou me acionar pelo meu<Link href="https://www.linkedin.com/in/guilhermesoaresgarcia/" target="blank">Linkedin</Link></p>
+      <p>Para entrar em contato comigo, preencha o formulário abaixo ou me contate via
+        <Link href="https://www.linkedin.com/in/guilhermesoaresgarcia/" target="blank">Linkedin</Link></p>
+      <br />
 
-      {showUserFeedback.map((item: any) => {
-        return <div key={item.index}>{item}{item.index}</div>
-      })}
+      {isError ? showUserFeedback.map((item: any, index: number) => {
+        return <div className="contact-user-feedback" key={index}>{item}</div>
+      }) : " "}
 
-      <form ref={form} onSubmit={sendEmail}>
-        <label>Nome:
-          <input
-            name="user_name"
-            type="text"
-            placeholder="Nome"
-          />
-        </label>
-        <label>E-mail:
-          <input
-            name="user_email"
-            type="email"
-            placeholder="nome@email.com"
-          />
-        </label>
-        <label>Mensagem:
-          <textarea
-            name="message"
-            placeholder="Digite aqui sua mensagem...">
-          </textarea>
-        </label>
+      <form className="contact-form" ref={form} onSubmit={sendEmail}>
+        <label htmlFor="user_name">Nome:</label>
         <input
-          type="submit"
-          value="Enviar"
+          id="user_name"
+          name="user_name"
+          type="text"
+          placeholder="Nome"
         />
+        <label htmlFor="user_email">E-mail:</label>
+        <input
+          id="user_email"
+          name="user_email"
+          type="text"
+          placeholder="nome@email.com"
+        />
+        <label htmlFor="message">Assunto:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Digite aqui sua mensagem...">
+        </textarea>
+        <div className="contact-form-buttons">
+          <input
+            type="reset"
+            value="Limpar"
+          />
+          <input
+            type="submit"
+            value="Enviar"
+          />
+        </div>
       </form>
     </div>
   )
