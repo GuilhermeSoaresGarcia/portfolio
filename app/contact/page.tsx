@@ -1,14 +1,15 @@
 "use client"
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { ChangeEvent, ReactNode, useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { z } from "zod";
-import "../../styles/contact.css"
+import "../../styles/contact.css";
 
 export default function Contact() {
   const [showUserFeedback, setShowUserFeedback] = useState<any>([]);
-  const [isError, setIsError] = useState<any>(false);
+  const [isError, setIsError] = useState<Boolean>(false);
+  const [messageLength, setMessageLength] = useState<Number>(250);
   const form: React.RefObject<HTMLFormElement> = useRef<HTMLFormElement>(null);
   const serviceId: String | undefined = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
   const templateId: String | undefined = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
@@ -30,6 +31,12 @@ export default function Contact() {
         .nonempty({ message: 'O campo "Mensagem" deve ser preenchido' })
         .max(250, { message: "A mensagem não deve ultrapassar 250 caracteres" }),
   });
+
+  const messageCharactersCounter = (e: ChangeEvent<HTMLTextAreaElement>) => {
+    const { value } = e.target;
+    const newValue = 250 - Number(value.length);
+    setMessageLength(newValue);
+  }
 
   const sendEmail = (e: any) => {
     e.preventDefault();
@@ -102,8 +109,11 @@ export default function Contact() {
         <textarea
           id="message"
           name="message"
-          placeholder="Digite aqui sua mensagem...">
+          placeholder="Digite aqui sua mensagem..."
+          onChange={messageCharactersCounter}
+        >
         </textarea>
+        <p>{messageLength as ReactNode}</p>
         <div className="contact-form-buttons">
           <input
             type="reset"
