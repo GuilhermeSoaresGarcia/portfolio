@@ -54,3 +54,24 @@
 .contact-form-buttons input[type=reset] {
     margin-right: 10px;
 }
+
+.contact-user-feedback {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.contact-user-feedback-message {
+    background-color: rgba(0, 255, 0, 0.7);
+    border: 2px dotted white;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.msg-error {
+    background-color: rgba(255, 0, 0, 0.7);
+}
