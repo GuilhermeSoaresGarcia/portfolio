@@ -62,7 +62,7 @@
 }
 
 .contact-user-feedback-message {
-    background-color: rgba(0, 255, 0, 0.7);
+    background-color: green;
     border: 2px dotted white;
     border-radius: 10px;
     color: white;
