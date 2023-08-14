@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import Navbar from "./navbar"
+import Navbar from "./NavBar"
 import { Advent_Pro } from "next/font/google" //FONTE: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 import "../styles/global.css"
 import "../styles/page.css"
