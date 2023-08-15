@@ -1,0 +1,80 @@
+.project-card-tecnologies span[data-text|=api],
+span[data-text*=express],
+span[data-text*=rest] {
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+.project-card-tecnologies span[data-text*=algorithms],
+span[data-text*=oop] {
+    background-color: grey;
+    border: none !important;
+}
+
+.project-card-tecnologies span[data-text*=css] {
+    background-color: pink;
+    border: none;
+}
+
+.project-card-tecnologies span[data-text*=docker] {
+    background-color: white;
+    border: none;
+}
+
+.project-card-tecnologies span[data-text*=html] {
+    background-color: orange;
+    border: none;
+}
+
+.project-card-tecnologies span[data-text=java] {
+    background-color: grey;
+    border: none;
+    color: white;
+}
+
+.project-card-tecnologies span[data-text=javascript] {
+    background-color: yellow;
+    border: none;
+}
+
+.project-card-tecnologies span[data-text*=node] {
+    background-color: green;
+    border: none;
+    color: white;
+}
+
+
+.project-card-tecnologies span[data-text*=py] {
+    background-color: lightseagreen;
+    border: none;
+}
+
+.project-card-tecnologies span[data-text|=r] {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.project-card-tecnologies span[data-text*=react] {
+    background-color: lightgreen;
+    border: none;
+}
+
+.project-card-tecnologies span[data-text*=jsx] {
+    background-color: yellow;
+    border: none;
+    color: green;
+}
+
+.project-card-tecnologies span[data-text*=tsx] {
+    background-color: blue;
+    border: none;
+    color: lightgreen;
+}
+
+.project-card-tecnologies span[data-text*=typescript] {
+    background-color: blue;
+    border: none;
+    color: white;
+}

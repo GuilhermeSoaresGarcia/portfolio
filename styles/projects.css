@@ -1,0 +1,66 @@
+@import "projects-technologies.css";
+
+.projects-container {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    margin: 0 auto;
+}
+
+.project-card {
+    flex: 40%;
+    margin: 0 10px 30px;
+    max-width: 315px;
+    padding: 10px;
+}
+
+.project-card:nth-child(odd) {
+    box-shadow: -15px 15px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 0 10px;
+}
+
+.project-card:nth-child(even) {
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 10px 0;
+}
+
+.project-card:hover {
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+    transition: ease-in-out 0.3s;
+}
+
+.project-card h1 {
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    width: auto;
+}
+
+.project-card h1:first-letter {
+    text-transform: uppercase;
+}
+
+.project-card a:link,
+.project-card a:active,
+.project-card a:visited,
+.project-card a:hover {
+    background-color: transparent;
+    color: black;
+    padding: 0 1% 0 1%;
+    text-decoration: none;
+}
+
+.project-card-tecnologies {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.project-card-tecnologies span {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 1px 1px;
+    padding: 0 0.5rem;
+}
