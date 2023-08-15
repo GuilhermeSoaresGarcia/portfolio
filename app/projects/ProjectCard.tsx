@@ -9,11 +9,11 @@ export default function ProjectCard({ name, description, html_url, language, top
             <hr />
             <h2>{description}</h2>
             <div className="project-card-tecnologies">
-            <h2>Tecnologias:&nbsp;</h2>
-            {!topics.length ? <span data-text={language.toLowerCase()}>{language.toLowerCase()}</span> :
-                topics.map((topic: any, index: number) => (
-                    <span data-text={topic} key={index}>{topic}</span>))
-            }
+                <p>Tecnologias:&nbsp;</p>
+                {!topics.length ? <span data-text={language.toLowerCase()}>{language.toLowerCase()}</span> :
+                    topics.map((topic: any, index: number) => (
+                        <span data-text={topic} key={index}>{topic}</span>))
+                }
             </div>
         </Link>
     )

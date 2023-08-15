@@ -14,7 +14,7 @@ async function getData() {
 
 export default async function Projects() {
   const data = await getData();
-  const ghRepositories = data.filter((repo: any) => (repo.description !== null));  
+  const ghRepositories = data.filter((repo: any) => (repo.description !== null));
 
   return (
     <div className="projects-container">
