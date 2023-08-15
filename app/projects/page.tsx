@@ -1,4 +1,4 @@
-import ProjectCard from "./RepoCard";
+import ProjectCard from "./ProjectCard";
 
 // FONTE: https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating#fetching-data-on-the-server-with-fetch
 async function getData() {
@@ -16,9 +16,9 @@ export default async function Projects() {
   const ghRepositories = data.filter((repo: any) => (repo.description !== null));  
 
   return (
-    <>
+    <div className="projects-container">
       {ghRepositories.map((item: any) => (
-        <div className="repo-card" key={item.id}>
+        <div className="project-card" key={item.id}>
           <ProjectCard
             name={item.name}
             description={item.description}
@@ -28,6 +28,6 @@ export default async function Projects() {
           />
         </div>
       ))}
-    </>
+    </div>
   );
 }
