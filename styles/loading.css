@@ -1,0 +1,17 @@
+.loading-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+}
+
+.loading-container div {
+    width: 5.5rem;
+}
+
+.loading-container img {
+    height: 5rem;
+    width: 5rem;
+}
