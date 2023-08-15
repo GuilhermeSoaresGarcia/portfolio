@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import "../../styles/projects.css"
 
 // FONTE: https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating#fetching-data-on-the-server-with-fetch
 async function getData() {

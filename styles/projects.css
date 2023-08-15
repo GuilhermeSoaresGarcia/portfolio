@@ -1,0 +1,41 @@
+@import "projects-technologies.css";
+
+.project-card {
+    display: flex;
+    width: 200px;
+    border: solid red;
+    padding-bottom: 30px;
+}
+
+.project-card h1 {
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    width: 200px;
+}
+
+.project-card h1:first-letter {
+    text-transform: uppercase;
+}
+
+.project-card-tecnologies {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.project-card-tecnologies span {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 1px 1px;
+    padding: 0 0.5rem;
+}
+
+.project-card a:link,
+a:active,
+a:visited,
+a:hover {
+    background-color: transparent;
+    color: black;
+    padding: 0 1% 0 1%;
+    text-decoration: none;
+}
