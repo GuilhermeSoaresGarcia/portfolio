@@ -1,9 +1,7 @@
-import Image from "next/image"
-import LoadingAnimation from "../../public/img/loading.gif"
-import "../../styles/page.css"
+import LoadingTemplate from "../(global_components)/Loading";
 
-export default function Loading() {  
+export default function Loading() {
   return (
-    <Image src={LoadingAnimation} className="loading_animation" alt="Loading" />
+    <LoadingTemplate />
   )
 }
