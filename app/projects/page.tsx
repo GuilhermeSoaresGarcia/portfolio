@@ -1,5 +1,8 @@
+import { IProject } from "./interfaces/IProject";
 import ProjectCard from "./ProjectCard";
 import "../../styles/projects.css"
+
+
 
 // FONTE: https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating#fetching-data-on-the-server-with-fetch
 async function getData() {
@@ -14,11 +17,11 @@ async function getData() {
 
 export default async function Projects() {
   const data = await getData();
-  const ghRepositories = data.filter((repo: any) => (repo.description !== null));
+  const ghRepositories = data.filter((repo: IProject) => (repo.description !== null));
 
   return (
     <div className="projects-container">
-      {ghRepositories.map((item: any) => (
+      {ghRepositories.map((item: IProject) => (
         <div className="project-card" key={item.id}>
           <ProjectCard
             name={item.name}
