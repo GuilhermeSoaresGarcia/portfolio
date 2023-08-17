@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link";
-import { ChangeEvent, ReactNode, useEffect, useRef, useState } from "react";
+import { ChangeEvent, FormEvent, ReactNode, useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { z } from "zod";
 import "../../styles/contact.css";
@@ -38,10 +38,10 @@ export default function Contact() {
     setMessageLength(newValue);
   }
 
-  const sendEmail = (e: any) => {
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const { user_email, user_name, message } = e.target;
+    const { user_email, user_name, message } = e.target as HTMLFormElement;
 
     const formFields = {
       user_email: user_email.value,
@@ -65,7 +65,7 @@ export default function Contact() {
         .then(() => {
           setIsError(false);
           setShowUserFeedback(["Mensagem enviada com sucesso!"]);
-          e.target.reset();
+          (e.target as HTMLFormElement).reset();
           setTimeout(() => (setShowUserFeedback([])), 5000);
         }, (error) => {
           console.log(error.text);
