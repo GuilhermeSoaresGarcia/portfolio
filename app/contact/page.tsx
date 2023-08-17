@@ -7,13 +7,13 @@ import { z } from "zod";
 import "../../styles/contact.css";
 
 export default function Contact() {
-  const [showUserFeedback, setShowUserFeedback] = useState<any>([]);
+  const [showUserFeedback, setShowUserFeedback] = useState<React.ComponentState>([]);
   const [isError, setIsError] = useState<Boolean>(false);
   const [messageLength, setMessageLength] = useState<Number>(250);
   const form: React.RefObject<HTMLFormElement> = useRef<HTMLFormElement>(null);
-  const serviceId: String | undefined = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-  const templateId: String | undefined = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-  const publicKey: String | undefined = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+  const serviceId: string | undefined = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const templateId: string | undefined = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  const publicKey: string | undefined = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
   useEffect(() => { }, [isError, showUserFeedback]);
 
@@ -54,7 +54,7 @@ export default function Contact() {
     if (validationResult.success === false) {
       const registeredErrors: Array<String> = [];
       setIsError(true);
-      validationResult.error.issues.map((issue: any) => {
+      validationResult.error.issues.map((issue: z.ZodIssue) => {
         registeredErrors.push(issue.message);
         setShowUserFeedback([...registeredErrors]);
         setTimeout(() => (setIsError(false), setShowUserFeedback([])), 5000);
@@ -76,7 +76,7 @@ export default function Contact() {
   return (
     <>
       <div className="contact-user-feedback">
-        {showUserFeedback.length ? showUserFeedback.map((item: any, index: number) => {
+        {showUserFeedback.length ? showUserFeedback.map((item: string, index: number) => {
           const statusMsg = "contact-user-feedback-message";
           return <div className={isError ? statusMsg + " msg-error" : statusMsg} key={index}>{item}</div>
         }) : ""}
