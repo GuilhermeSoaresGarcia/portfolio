@@ -1,7 +1,7 @@
-// import { ISkill } from "./interfaces/ISkill"
+import { IProject } from "./interfaces/IProject"
 import Link from "next/link"
 
-export default function ProjectCard({ name, description, html_url, language, topics }: any) {
+export default function ProjectCard({ name, description, html_url, language, topics }: IProject) {
 
     return (
         <Link href={html_url} target="_blank">
@@ -11,7 +11,7 @@ export default function ProjectCard({ name, description, html_url, language, top
             <div className="project-card-tecnologies">
                 <p>Tecnologias:&nbsp;</p>
                 {!topics.length ? <span data-text={language.toLowerCase()}>{language.toLowerCase()}</span> :
-                    topics.map((topic: any, index: number) => (
+                    topics.map((topic: string, index: number) => (
                         <span data-text={topic} key={index}>{topic}</span>))
                 }
             </div>
