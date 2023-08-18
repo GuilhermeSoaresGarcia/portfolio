@@ -28,6 +28,7 @@
 }
 
 .contact-container form textarea {
+    border: 1px solid black;
     grid-column: 3 / 3;
     height: 5rem;
     resize: none;
