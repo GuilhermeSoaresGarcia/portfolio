@@ -46,6 +46,7 @@
 .project-card a:active,
 .project-card a:visited,
 .project-card a:hover {
+    background: none;
     background-color: transparent;
     color: black;
     padding: 0 1% 0 1%;

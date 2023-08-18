@@ -19,27 +19,31 @@ section {
     width: 70%;
 }
 
-a:link {
+section a:link {
+    background: linear-gradient(180deg, transparent, white);
+    background-attachment: scroll;
+    background-image: linear-gradient(transparent, white);
+    background-size: 100% 2px;
+    background-position: bottom;
+    background-repeat: no-repeat;
     border-radius: 10px;
-    color: rgba(0, 0, 0, 0.7);
+    color: black;
+    font-style: italic;
+    transition: background-size 1s;
     padding: 0 1% 0 1%;
-    text-decoration: underline;
-}
-
-a:active {
-    color: white;
-    background-color: black;
     text-decoration: none;
 }
 
-a:visited {
-    color: rgba(0, 0, 0, 0.7);
+section a:active {
+    background-size: 100% 100%;
 }
 
-a:hover {
-    color: white;
-    background-color: black;
-    text-decoration: none;
+section a:visited {
+    color: black;
+}
+
+section a:hover {
+    background-size: 100% 100%;
 }
 
 p {
