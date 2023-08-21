@@ -32,6 +32,7 @@
 }
 
 .project-card h1 {
+    font-style: normal;
     overflow: hidden;
     position: relative;
     white-space: nowrap;
@@ -51,17 +52,4 @@
     color: black;
     padding: 0 1% 0 1%;
     text-decoration: none;
-}
-
-.project-card-tecnologies {
-    display: inline-flex;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-
-.project-card-tecnologies span {
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: 1px 1px;
-    padding: 0 0.5rem;
 }

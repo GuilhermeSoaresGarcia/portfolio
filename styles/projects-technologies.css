@@ -1,3 +1,17 @@
+.project-card-tecnologies {
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-style: normal;
+    padding: 10px;
+}
+
+.project-card-tecnologies span {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 1px 1px;
+    padding: 0 0.5rem;
+}
+
 .project-card-tecnologies span[data-text|=api],
 span[data-text*=express],
 span[data-text*=rest] {
