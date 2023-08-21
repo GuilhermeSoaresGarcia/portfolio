@@ -1,11 +1,11 @@
 @import "projects-technologies.css";
 
-.projects-container {
+.projects-card-container {
     align-self: center;
     display: flex;
     flex-wrap: wrap;
     justify-self: center;
-    margin: 0 auto;
+    margin: 20px auto 0;
 }
 
 .project-card {

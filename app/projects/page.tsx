@@ -21,17 +21,28 @@ export default async function Projects() {
 
   return (
     <div className="projects-container">
-      {ghRepositories.map((item: IProject) => (
-        <div className="project-card" key={item.id}>
-          <ProjectCard
-            name={item.name}
-            description={item.description}
-            html_url={item.html_url}
-            language={item.language}
-            topics={item.topics}
-          />
-        </div>
-      ))}
+      <h1>Projetos</h1>
+      <h2>Repositórios de alguns projetos pessoais</h2>
+      <hr />
+      <p>
+        Aqui estão listados alguns dos códigos dos meus projetos armazenado no GitHub.
+        Utilizei a API da plataforma para relacionar as informações que considerei mais
+        relevantes sobre eles - como as tecnologias utilizadas e a descrição do uso. Para 
+        acessar o repositório do projeto, basta clicar sobre o card.
+      </p>
+      <div className="projects-card-container">
+        {ghRepositories.map((item: IProject) => (
+          <div className="project-card" key={item.id}>
+            <ProjectCard
+              name={item.name}
+              description={item.description}
+              html_url={item.html_url}
+              language={item.language}
+              topics={item.topics}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
