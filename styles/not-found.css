@@ -1,0 +1,7 @@
+.not-found-container {
+    text-align: center;
+}
+
+.not-found-container > img {
+    padding-top: 20px;
+}

@@ -80,13 +80,13 @@ hr {
 
 .about-container,
 .contact-container,
+.not-found-container,
 .projects-container,
 .skill-container {
     align-self: center;
     padding-bottom: 10%;
     padding-top: 10%;
 }
-
 
 .text-italic {
     font-style: italic;
