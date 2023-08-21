@@ -37,7 +37,7 @@
     background-color: transparent;
 }
 
-.navbar a:hover:before {
+.navbar a:hover::before {
     content: '» ';
     position: relative;
     text-decoration: none;
@@ -47,7 +47,7 @@
     font-style: italic;
 }
 
-.active_section:before {
+.active_section::before {
     content: '» ';
     position: relative;
     text-decoration: none;
@@ -55,7 +55,7 @@
 
 .social_media {
     display: inline-block;
-    padding: 1%;
+    padding-top: 5px;
     width: 200px;
 }
 
@@ -64,8 +64,13 @@
     width: 25px;
 }
 
+.social_media a:first-of-type {
+    height: 25px;
+    padding-right: 5px;
+    width: 25px;
+}
+
 .social_media img:hover {
-    padding: 0;
     transform: rotate(360deg);
     transition: all .5s;
 }
