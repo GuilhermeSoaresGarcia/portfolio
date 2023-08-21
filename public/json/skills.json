@@ -47,7 +47,7 @@
             "title": "TypeScript",
             "subtitle": "Superset tipado do JavaScript para desenvolvimento robusto",
             "img": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut molestiae et culpa explicabo aliquam eligendi dignissimos voluptatem minima, dolorum reprehenderit asperiores ut ipsum beatae similique! Quis cumque nihil dicta?"
+            "description": "Ainda que eu particularmente não tenha tido a oportunidade de ver na prática um caso de uso em que o TypeScript tenha me facilitado a vida (porque todos os projetos em que o utilizei - incluindo este próprio portifólio - poderiam ter sido feitos em JavaScript puro), entendo que a medida em que alguma aplicação web fica mais robusta, a tipagem fraca do JavaScript pode acabar dificultando o debug do projeto. Além disso, quando houver a necessidade de eu utilizar alguma outra linguagem com tipagem forte, acho que alguns dos conhecimentos que adquiri com o TypeScript certamente me facilitarão a compreensão."
         }
     ]
 }
