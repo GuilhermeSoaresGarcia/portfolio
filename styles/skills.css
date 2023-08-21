@@ -1,6 +1,6 @@
-.skill-container {
+.skills-card-container {
     display: grid;
-    margin: 0 auto;
+    margin: 20px auto 0;
 }
 
 .skill-card {
