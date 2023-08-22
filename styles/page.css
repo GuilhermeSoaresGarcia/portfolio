@@ -80,14 +80,31 @@ hr {
 
 .about-container,
 .contact-container,
+.home-container,
 .not-found-container,
 .projects-container,
 .skill-container {
     align-self: center;
     padding-bottom: 10%;
     padding-top: 10%;
+    animation-name: fromThePitToThePinnacle;
+    animation-duration: 3s;
 }
 
 .text-italic {
     font-style: italic;
+}
+
+@keyframes fromThePitToThePinnacle {
+    from {
+        opacity: 0%;
+        margin: 100% 0;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+    }
+
+    to {
+        margin: 0;        
+     }
 }
