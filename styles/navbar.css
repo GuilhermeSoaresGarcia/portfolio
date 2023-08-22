@@ -11,12 +11,14 @@
     background-image: linear-gradient(to right, black, white);
     background-repeat: no-repeat;
     content: "";
-    position: fixed;
     height: 100%;
+    position: fixed;
     width: 30%;
 }
 
 .navbar {
+    animation-name: fromLeftToRight;
+    animation-duration: 3s;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -33,8 +35,8 @@
 }
 
 .navbar a:hover {
-    text-decoration: underline;
     background-color: transparent;
+    text-decoration: underline;
 }
 
 .navbar a:hover::before {
@@ -78,4 +80,15 @@
 .social_media a:hover::before {
     content: '';
     text-decoration: none;
+}
+
+@keyframes fromLeftToRight {
+    from {
+        right: 100%;
+        opacity: 0%;
+    }
+
+    to {
+        right: 70%;
+    }
 }
