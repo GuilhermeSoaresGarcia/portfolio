@@ -5,7 +5,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-self: center;
-    margin: 20px auto 0;
+    margin: 20px 0 0 -20px;
+    width: 120%;
 }
 
 .project-card {
