@@ -97,12 +97,11 @@ hr {
 
 @keyframes fromThePitToThePinnacle {
     from {
-        margin-bottom: 100%;
-        position: fixed;
+        margin-top: 100%;
         opacity: -100%;
     }
 
     to {
-        margin-bottom: 0;
+        margin-top: 0;
     }
 }
