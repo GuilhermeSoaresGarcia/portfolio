@@ -15,7 +15,7 @@ section:before {
 
 section {
     display: flex;
-    overflow-x: overlay;
+    overflow: overlay;
     width: 70%;
 }
 
@@ -29,9 +29,9 @@ section a:link {
     border-radius: 10px;
     color: black;
     font-style: italic;
-    transition: background-size 1s;
     padding: 0 1% 0 1%;
     text-decoration: none;
+    transition: background-size 1s;
 }
 
 section a:active {
@@ -73,8 +73,8 @@ hr {
 .main-container {
     align-self: center;
     display: grid;
-    margin: 0 auto;
     height: 100vh;
+    margin: 0 auto;
     width: 50%;
 }
 
@@ -85,10 +85,10 @@ hr {
 .projects-container,
 .skill-container {
     align-self: center;
+    animation-duration: 3s;
+    animation-name: fromThePitToThePinnacle;
     padding-bottom: 10%;
     padding-top: 10%;
-    animation-name: fromThePitToThePinnacle;
-    animation-duration: 3s;
 }
 
 .text-italic {
@@ -97,14 +97,12 @@ hr {
 
 @keyframes fromThePitToThePinnacle {
     from {
-        opacity: 0%;
-        margin: 100% 0;
-        height: 1px;
-        width: 1px;
-        overflow: hidden;
+        margin-bottom: 100%;
+        position: fixed;
+        opacity: -100%;
     }
 
     to {
-        margin: 0;        
-     }
+        margin-bottom: 0;
+    }
 }
