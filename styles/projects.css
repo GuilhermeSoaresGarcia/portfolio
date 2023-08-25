@@ -2,17 +2,13 @@
 
 .projects-card-container {
     align-self: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-self: center;
-    margin: 20px 0 0 -20px;
-    width: 120%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50%);
 }
 
 .project-card {
-    flex: 40%;
     margin: 0 10px 30px;
-    max-width: 315px;
+    min-width: 50%;
     padding: 10px;
 }
 
@@ -53,4 +49,10 @@
     color: black;
     padding: 0 1% 0 1%;
     text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .projects-card-container {
+        grid-template-columns: 1fr;
+    }
 }
