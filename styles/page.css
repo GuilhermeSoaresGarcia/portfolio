@@ -105,3 +105,19 @@ hr {
         margin-top: 0;
     }
 }
+
+@media (max-width: 599px) {
+    .main-container {
+        padding-top: 10%;
+        width: 90%;
+    }
+
+    section::before {
+        background-image: linear-gradient(to right, white, cyan);
+    }
+
+    section {
+        width: 100%;
+    }
+
+}

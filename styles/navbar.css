@@ -1,3 +1,7 @@
+.hambuguer_btn {
+    display: none;
+}
+
 .navbar_container {
     align-items: center;
     display: flex;
@@ -90,5 +94,57 @@
 
     to {
         right: 70%;
+    }
+}
+
+@media (max-width: 599px) {
+    .hambuguer_btn {
+        background-color: transparent;
+        border: none;
+        display: block;
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 0 0 0 3%;
+        position: fixed;
+        z-index: 4;
+    }
+
+    .hambuguer_btn:focus {
+        outline: none;
+    }
+
+    .navbar_container::before {
+        display: none;
+    }
+
+    .navbar_container {
+        background-color: white;
+        box-shadow: 1px 0 30px 10px black;
+        display: none;
+        height: 100vh;
+        position: fixed;
+        text-align: right;
+        width: 50%;
+        z-index: 2;
+    }
+
+    .navbar {
+        /* animation: none; */
+        margin: 0 10px 0 -10px;        
+    }
+
+    .open {
+        display: flex;
+    }
+
+    @keyframes fromLeftToRight {
+        from {
+            right: 100%;
+            opacity: 0%;
+        }
+    
+        to {
+            right: 50%;
+        }
     }
 }
