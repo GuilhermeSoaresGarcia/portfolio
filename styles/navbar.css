@@ -99,8 +99,9 @@
 
 @media (max-width: 599px) {
     .hambuguer_btn {
-        background-color: transparent;
+        background-color: white;
         border: none;
+        border-radius: 10px;
         display: block;
         font-size: 3rem;
         font-weight: 700;
