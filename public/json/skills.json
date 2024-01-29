@@ -48,6 +48,13 @@
             "subtitle": "Superset tipado do JavaScript para desenvolvimento robusto",
             "img": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
             "description": "Ainda que eu particularmente não tenha tido a oportunidade de ver na prática um caso de uso em que o TypeScript tenha me facilitado a vida (porque todos os projetos em que o utilizei - incluindo este próprio portifólio - poderiam ter sido feitos em JavaScript puro), entendo que a medida em que alguma aplicação web fica mais robusta, a tipagem fraca do JavaScript pode acabar dificultando o debug do projeto. Além disso, quando houver a necessidade de eu utilizar alguma outra linguagem com tipagem forte, acho que alguns dos conhecimentos que adquiri com o TypeScript certamente me facilitarão a compreensão."
+        },
+        {
+            "id": 8,
+            "title": "Java",
+            "subtitle": "Linguagem de programação versátil e orientada a objetos, amplamente usada para desenvolvimento de software.",
+            "img": "https://www.vectorlogo.zone/logos/java/java-icon.svg",
+            "description": "Comecei a estudar a linguagem no final do ano passado e, apesar de ela de fato ser bastante verbosa como todos dizem, confesso que gostei muito! Acho que minha compreensão sobre orientação a objetos e tipagens melhorou sobremaneira desde que comecei a estudar Java. Em termos de desenvolvimento web, gostei bastante do Spring para o desenvolvimento de apis rest."
         }
     ]
 }
