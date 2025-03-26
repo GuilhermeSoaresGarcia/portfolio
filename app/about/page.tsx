@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className="about-container">
       <h1>Um pouco sobre mim</h1>
-      <h2>Da criança curiosa ao desenvolvedor</h2>
+      <h2>De curioso a solucionador de problemas</h2>
       <hr />
       <p>
         Desde pequeno sempre gostei bastante de entender o funcionamento das coisas, então eu costumava abrir os brinquedos e tirar os "motorezinhos" daqui,
